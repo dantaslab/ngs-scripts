@@ -13,7 +13,7 @@
   - *hmmscan-parser_MB.py* : parse the hmm files
 ------------
 
-#### __Programs/scripts for metagenomic analysis__
+#### __Metagenomic Analysis__
 - __Taxonomic profiling using metaphlan2__
   - *parse_metaphlan_MB.py* : The program will parse the metaphlan2 output and output file that can be directly used in R for downstream analysis.
 - __Parser for CARD database__
@@ -21,9 +21,14 @@
   - *parse_aro_obo_MB.py*
 ------------
 
-#### __Programs/scripts for isolates analysis__
+#### __Isolate Analysis__
 - __Assembly of Isolate genomes__
   - *sequence_assembly_MB.py* : Performs assembly using Spades, IDBA-UD and Velvet and also runs the quast to evaluate genome assembly any finally generate summary for each samples
 - __Characterization of Plasmid sequences from Spades Assembled genomes__ 
   - *plasmid_identify_MB.py* : 
 - __Pangenome anaylsis__
+------------
+
+#### __Functional Metagenomics Analysis__
+- __Annotation of PARFuMS contigs__
+  - *annnotate_parfums_contigs_MB.py* : Performs filtering and annotation of contigs from PARFuMS assembly
