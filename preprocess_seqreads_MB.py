@@ -359,7 +359,7 @@ def read_mappingfile(filename, col):
                 sys.exit(1)
 
     logger.debug("IDs: {}".format(str(sample_info)))
-    fh.close()
+    #fh.close()
 
     return sample_info
 
