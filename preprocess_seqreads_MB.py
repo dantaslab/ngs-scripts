@@ -412,7 +412,7 @@ def count_reads(sample_info, input_seqdir, output_maindir, step_num, temp_dir):
             sys.exit(1)
 
     	if os.access(fw_readfile, os.R_OK) and os.access(rv_readfile, os.R_OK):
-	    logger.debug("Counting number of reads in {}".format(fw_readfile))
+            logger.debug("Counting number of reads in {}".format(fw_readfile))
             #cmd = 'fgrep -h -c "`head -n 1 ' + fw_readfile + ' | awk -F\'[:]\' \'{print $1}\'`" ' \
             #    + str(os.path.join(input_seqdir, str(id) + "_*.fastq" )) \
             #    + ' | xargs echo ' + id + ' | sed \'s/ /\\t/g\' >> ' + output_file + '; echo exit_code:$?'
